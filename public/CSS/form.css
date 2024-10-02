@@ -1,0 +1,23 @@
+div{
+    border: 2px solid rgb(33,137,236);
+    width: 30%;
+    padding: 20px;
+    background-color: aliceblue;
+    height: 350px;
+}
+
+form{
+    border-radius: 1rem;
+    width: 50%;
+}
+
+h1,h3{
+    color: rgb(33,137,236);
+}
+
+button{
+    background-color: aliceblue;
+    border-color: rgb(33, 137, 236);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Chats</title>
+    <link rel="stylesheet" href="/show.css">
+    
+</head>
+<body>
+    <h1>All Chats</h1>
+    <%for(chat of allChats){%>
+        <div>
+            <p><b>From:</b><i><%=chat.from%></i></p>
+            <p><b>To:</b><i><%=chat.to%></i></p>
+            <p class="msg"><b>Message:</b><%=chat.message%></p>
+            <p><b>Create Time:</b><%=chat.created_at.toString().split(" ")[4]%> 
+                <%=chat.created_at.toString().split(" ").slice(0,4).join(" ")%>
+            </p>
+            <p><b>Update Time:</b><%=chat.updated_at.toString().split(" ")[4]%> <%=chat.updated_at.toString().split(" ").slice(0,4).join(" ")%></p>
+            <form method="get" action="http://localhost:8080/chats/<%=chat._id%>/edit">
+                <button>Update Message</button>
+            </form>
+            <form method="POST" action="http://localhost:8080/chats/<%=chat._id%>?_method=DELETE">
+                <button onclick="print()">Delete Message</button>
+            </form>
+            <hr>
+        </div>
+    <%}%>
+    <form method="get" action="http://localhost:8080/chats/new">
+        <button class="btn">Send new  message</button>
+    </form>
+    <script src="/app.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,37 @@
+div{
+    background-color: aliceblue;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 1.5rem;
+}
+
+.msg{
+    background-color: rgb(33, 137, 236);
+    padding: 15px;
+    border-radius: 0.5rem;
+}
+
+h1{
+    text-align: center;
+    text-decoration: rgb(157, 216, 239) wavy underline;
+    color: rgb(33, 137, 236);
+}
+
+.btn{
+    margin-left:20px;
+    background-color: aliceblue;
+    margin-top: -10px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border-color: rgb(33, 137, 236);
+}
+
+button{
+    background-color: aliceblue;
+    border-color: rgb(33, 137, 236);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-top: 12px;
+}
+

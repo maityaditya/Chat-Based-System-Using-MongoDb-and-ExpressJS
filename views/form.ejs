@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+<body>
+    <h1>Send new message</h1>
+    <div>
+    <form method="post" action="http://localhost:8080/chats">
+        <label for="from">From:</label>
+        <br>
+        <input type="text" id="from" name="from">
+        <br><br>
+        <label for="to">To:</label>
+        <br>
+        <input type="text" id="to" name="to">
+        <br><br>
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" name="message" placeholder="enter message" rows="5" cols="40"></textarea>
+        <br><br>
+        <button>Submit</button>
+    </form>
+    </div>
+</body>
+</html>
